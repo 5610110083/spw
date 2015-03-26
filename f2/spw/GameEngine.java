@@ -18,7 +18,7 @@ public class GameEngine implements KeyListener, GameReporter{
 	private Timer timer;
 	
 	private long score = 0;
-	private double difficulty = 0.3;
+	private double difficulty = 0.1;
 	
 	public GameEngine(GamePanel gp, SpaceShip v) {
 		this.gp = gp;
@@ -26,7 +26,7 @@ public class GameEngine implements KeyListener, GameReporter{
 		
 		gp.sprites.add(v);
 		
-		timer = new Timer(40, new ActionListener() {
+		timer = new Timer(30, new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {

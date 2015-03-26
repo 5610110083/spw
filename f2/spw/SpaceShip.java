@@ -3,16 +3,18 @@ import java.awt.Graphics2D;
 
 public class SpaceShip extends Sprite{
 
-	int step = 10;
+	int step = 8;
 	
 	public SpaceShip(int x, int y, int width, int height) {
 		super(x, y, width, height);
+		
 	}
 
 	@Override
 	public void draw(Graphics2D g) {
 		g.setColor(Color.BLACK);
 		g.fillRect(x, y, width, height);
+		
 	}
 
 	public void move(int direction){
